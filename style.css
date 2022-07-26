@@ -247,6 +247,7 @@ ul{
     height: 17px;
     color: var(--black);
     transform: rotate(-180deg);
+    border: 0.77px solid var(--black);
 }
 
 #offers .info li svg{
@@ -543,7 +544,7 @@ transform: translateY(5px);
     align-items: flex-start;
 }
 
-#footer .bottom ul:nth-child(1){
+#footer .bottom .foottop ul:nth-child(1){
     margin-left: 60px;
 }
 
@@ -554,7 +555,7 @@ transform: translateY(5px);
     align-items: flex-start;
 }
 
-#footer .bottom ul li h3{
+#footer .bottom .foottop ul li h3{
     font-family: 'Inter';
     font-weight: 700;
     font-size: 16px;
@@ -563,7 +564,7 @@ transform: translateY(5px);
     margin-bottom: 15px;
 }
 
-#footer .bottom ul li p{
+#footer .bottom .foottop ul li p{
     font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
@@ -571,20 +572,20 @@ transform: translateY(5px);
     margin-bottom: 13px;
 }
 
-#footer .bottom ul li a{
+#footer .bottom .foottop ul li a{
     color: var(--white);
     opacity: 0.5;
     text-decoration: none;
 }
 
-#footer .bottom .subscribe{
+#footer .bottom .foottop .subscribe{
     width: 430px;
     padding-right: 42px;
     padding-left: 42px;
     margin-right: 60px;
 }
 
-#footer .bottom .subscribe h3{
+#footer .bottom .foottop .subscribe h3{
     font-family: 'Inter';
     font-weight: 700;
     font-size: 16px;
@@ -593,7 +594,7 @@ transform: translateY(5px);
     margin-bottom: 18px;
 }
 
-#footer .bottom .subscribe p{
+#footer .bottom .foottop .subscribe p{
     font-family: 'Inter';
     font-weight: 400;
     font-size: 12px;
@@ -602,11 +603,11 @@ transform: translateY(5px);
     margin-bottom: 30px;
 }
 
-#footer .bottom .subscribe div{
+#footer .bottom .foottop .subscribe div{
     padding: 0;
 }
 
-#footer .bottom .subscribe div input{
+#footer .bottom .foottop .subscribe div input{
     width: 288px;
     height: 50px;
     border: none;
@@ -614,9 +615,11 @@ transform: translateY(5px);
     border-radius: 6px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+    outline: none;
+    padding-left: 20px;
 }
 
-#footer .bottom .subscribe div button{
+#footer .bottom .foottop .subscribe div button{
     width: 50px;
     height: 50px;
     background: var(--blue);
@@ -628,7 +631,7 @@ transform: translateY(5px);
     cursor: pointer;
 }
 
-#footer .bottom .subscribe div button span{
+#footer .bottom .foottop .subscribe div button span{
     color: var(--white);
 }
 
@@ -641,7 +644,7 @@ transform: translateY(5px);
     margin-bottom: 30px;
 }
 
-hr{
+#footer .footbot hr{
     width: calc(100% - 120px);
     color: var(--white);
     height: 0;
@@ -659,14 +662,18 @@ hr{
     fill: var(--white);
 }
 
-#footer .footbot div h2{
+#footer .footbot div a h2{
     font-family: 'Inter';
     font-weight: 700;
     font-size: 20px;
     line-height: 17px;
     letter-spacing: 0.2px;
-    color: var(--white);
     margin-left: 8px;
+}
+
+#footer .footbot div a{
+    color: var(--white);
+    text-decoration: none;
 }
 
 #footer .footbot ul{
@@ -676,12 +683,16 @@ hr{
     list-style: none;
 }
 
-#footer .footbot ul li p{
+#footer .footbot ul li a p{
     font-family: 'Inter';
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
+}
+
+#footer ul li a{
     color: var(--white);
+    text-decoration: none;
 }
 
 #footer .footbot ul li:not(:last-child){
