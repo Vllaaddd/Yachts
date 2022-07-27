@@ -10,7 +10,7 @@
     --blue: #4FAEAB;
     --black: #000000;
     --white: #ffffff;
-    --light-black: #333333;
+    --light-black: #333;
 }
 
 ul{
@@ -21,6 +21,8 @@ ul{
     padding-left: 60px;
     padding-right: 60px;
 }
+
+/* HEADER */
 
 #header{
     display: flex;
@@ -119,11 +121,14 @@ ul{
     margin-right: 30px;
 }
 
+/* HERO SECTION */
+
 #hero{
     width: 100%;
     height: 724px;
     background-image: url(./img/jpg/hero-img.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     margin-bottom: 153px;
 }
@@ -248,6 +253,8 @@ ul{
     cursor: pointer;
 }
 
+/* OFFERS */
+
 #offers{
     width: 100%;
     margin-bottom: 87px;
@@ -271,12 +278,17 @@ ul{
 }
 
 #offers .card{
-    box-shadow: 0px 4px 12px 0px #0000001F;
+    box-shadow: 0px 4px 12px 0px #0000001F; 
     border-radius: 5px;
     padding-bottom: 15px;
     position: relative;
     width: 337px;
     margin-right: 0;
+    cursor: pointer;
+}
+
+#offers .card:hover{
+    box-shadow: 0px 14px 20px 0px #0000001F;
 }
 
 #offers img:nth-child(1){
@@ -374,12 +386,13 @@ ul{
     margin-left: auto;
 }
 
-#offers ol{
-    list-style: none;
+#offers div{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* AVIABLE */
 
 #aviable{
     width: 100%;
@@ -486,6 +499,8 @@ transform: translateY(5px);
     left: 0px;
 }
 
+/* BLOG */
+
 #blog{
     width: 100%;
     padding-top: 120px;
@@ -540,6 +555,8 @@ transform: translateY(5px);
     color: #999999;
 }
 
+/* ASKS */
+
 #ask{
     width: 100%;
     padding-top: 80px;
@@ -593,7 +610,9 @@ transform: translateY(5px);
     margin-right: 16px;
 }
 
-#footer{
+/* FOOTER */
+
+.footer{
     width: 100%;
     height: 100vh;
     background-image: url(./img/jpg/footer-img.jpg);
@@ -601,13 +620,13 @@ transform: translateY(5px);
     background-size: cover;
 }
 
-#footer .top{
+.footer .top{
     width: 100%;
     height: 35vh;
     background: linear-gradient(180deg, #FFFFFF 36.78%, rgba(238, 244, 255, 0) 66.9%);
 }
 
-#footer .bottom{
+.footer .bottom{
     width: 100%;
     height: 65vh;
     display: flex;
@@ -623,18 +642,18 @@ transform: translateY(5px);
     align-items: flex-start;
 }
 
-#footer .bottom .foottop ul:nth-child(1){
+.footer .bottom .foottop ul:nth-child(1){
     margin-left: 60px;
 }
 
-#footer .bottom .foottop ul{
+.footer .bottom .foottop ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 
-#footer .bottom .foottop ul li h3{
+.footer .bottom .foottop ul li h3{
     font-family: 'Inter';
     font-weight: 700;
     font-size: 16px;
@@ -643,7 +662,7 @@ transform: translateY(5px);
     margin-bottom: 15px;
 }
 
-#footer .bottom .foottop ul li p{
+.footer .bottom .foottop ul li p{
     font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
@@ -651,20 +670,20 @@ transform: translateY(5px);
     margin-bottom: 13px;
 }
 
-#footer .bottom .foottop ul li a{
+.footer .bottom .foottop ul li a{
     color: var(--white);
     opacity: 0.5;
     text-decoration: none;
 }
 
-#footer .bottom .foottop .subscribe{
+.footer .bottom .foottop .subscribe{
     width: 430px;
     padding-right: 42px;
     padding-left: 42px;
     margin-right: 60px;
 }
 
-#footer .bottom .foottop .subscribe h3{
+.footer .bottom .foottop .subscribe h3{
     font-family: 'Inter';
     font-weight: 700;
     font-size: 16px;
@@ -673,7 +692,7 @@ transform: translateY(5px);
     margin-bottom: 18px;
 }
 
-#footer .bottom .foottop .subscribe p{
+.footer .bottom .foottop .subscribe p{
     font-family: 'Inter';
     font-weight: 400;
     font-size: 12px;
@@ -682,11 +701,11 @@ transform: translateY(5px);
     margin-bottom: 30px;
 }
 
-#footer .bottom .foottop .subscribe div{
+.footer .bottom .foottop .subscribe div{
     padding: 0;
 }
 
-#footer .bottom .foottop .subscribe div input{
+.footer .bottom .foottop .subscribe div input{
     width: 288px;
     height: 50px;
     border: none;
@@ -698,7 +717,7 @@ transform: translateY(5px);
     padding-left: 20px;
 }
 
-#footer .bottom .foottop .subscribe div button{
+.footer .bottom .foottop .subscribe div button{
     width: 50px;
     height: 50px;
     background: var(--blue);
@@ -710,11 +729,11 @@ transform: translateY(5px);
     cursor: pointer;
 }
 
-#footer .bottom .foottop .subscribe div button span{
+.footer .bottom .foottop .subscribe div button span{
     color: var(--white);
 }
 
-#footer .footbot{
+.footer .footbot{
     width: 100%;
     height: 65px;
     display: flex;
@@ -723,25 +742,25 @@ transform: translateY(5px);
     margin-bottom: 30px;
 }
 
-#footer .footbot hr{
+.footer hr{
     width: calc(100% - 120px);
     color: var(--white);
     height: 0;
     border: 0.1px solid var(--white);
 }
 
-#footer .footbot div{
+.footer .footbot div{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 60px;
 }
 
-#footer .footbot div svg{
+.footer .footbot div svg{
     fill: var(--white);
 }
 
-#footer .footbot div a h2{
+.footer .footbot div a h2{
     font-family: 'Inter';
     font-weight: 700;
     font-size: 20px;
@@ -750,35 +769,35 @@ transform: translateY(5px);
     margin-left: 8px;
 }
 
-#footer .footbot div a{
+.footer .footbot div a{
     color: var(--white);
     text-decoration: none;
 }
 
-#footer .footbot ul{
+.footer .footbot ul{
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
 }
 
-#footer .footbot ul li a p{
+.footer .footbot ul li a p{
     font-family: 'Inter';
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
 }
 
-#footer ul li a{
+.footer ul li a{
     color: var(--white);
     text-decoration: none;
 }
 
-#footer .footbot ul li:not(:last-child){
+.footer .footbot ul li:not(:last-child){
     margin-right: 36px;
 }
 
-#footer .footbot ol{
+.footer .footbot ol{
     list-style: none;
     display: flex;
     justify-content: center;
@@ -786,11 +805,11 @@ transform: translateY(5px);
     margin-right: 60px;
 }
 
-#footer .footbot ol li:not(:last-child){
+.footer .footbot ol li:not(:last-child){
     margin-right: 15px;
 }
 
-#footer .footbot ol li a{
+.footer .footbot ol li a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -798,4 +817,66 @@ transform: translateY(5px);
     height: 35px;
     border: 1.5px solid var(--white);
     border-radius: 50%;
+}
+
+.footer .footbot ol li a svg{
+    fill: var(--white);
+}
+
+/* 
+
+
+    YACHT LIST
+
+
+*/
+
+.footer-yacht-list{
+    background-image: none;
+}
+
+.footer-yacht-list .bottom .foottop ul li p{
+    color: var(--light-black);
+    opacity: .5;
+}
+
+.footer-yacht-list .bottom .foottop ul li h3{
+    color: var(--light-black);
+}
+
+.footer-yacht-list .bottom .foottop .subscribe h3{
+    color: var(--light-black);
+}
+
+.footer-yacht-list .bottom .foottop .subscribe div input{
+    border: 1px solid #E0E0E0;
+}
+
+.footer .bottom .foottop .subscribe div button span{
+    color: var(--light-black);
+}
+
+.footer-yacht-list hr{
+    color: var(--light-black);
+    border: 0.1px solid var(--light-black);
+}
+
+.footer-yacht-list .footbot div svg{
+    fill: var(--light-black);
+}
+
+.footer-yacht-list .footbot div a{
+    color: var(--light-black);
+}
+
+.footer-yacht-list ul li a{
+    color: var(--light-black);
+}
+
+.footer-yacht-list .footbot ol li a{
+    border: 1.5px solid var(--light-black);
+}
+
+.footer-yacht-list .footbot ol li a svg{
+    fill: var(--light-black);
 }
