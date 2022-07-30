@@ -62,3 +62,16 @@ function change() {
       result.style.display = 'block';
     });
 }
+
+const bedroomButtons = document.querySelectorAll('.bbuttons .bbutton');
+let i = 0;
+
+bedroomButtons[0].addEventListener('click', function(){
+    i--;
+    document.querySelector('.binput').value = i;
+});
+
+bedroomButtons[1].addEventListener('click', function(){
+    i++;
+    document.querySelector('.binput').value = i;
+});

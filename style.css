@@ -301,7 +301,7 @@ ul{
     width: 100%;
 }
 
-.offers h3{
+.offers .card h3{
     font-family: 'Inter';
     font-weight: 700;
     font-size: 18px;
@@ -877,7 +877,7 @@ transform: translateY(5px);
 
 .yacht-list-offers .filters hr{
     width: 100%;
-    border: 2px solid #F2F2F2;
+    border: 2px solid #cacdd18f;
     margin-bottom: 30px;
 }
 
@@ -931,14 +931,15 @@ transform: translateY(5px);
     margin-bottom: 15px;
 }
 
-.yacht-list-offers .filters .price .price-div .price-h4,
-.yacht-list-offers .filters .length .length-div .length-h4{
+.yacht-list-offers .filters .price .price-div .price-h3,
+.yacht-list-offers .filters .length .length-div .length-h3{
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.2px;
     color: var(--black);
+    margin-bottom: 10px;
 }
 
 .yacht-list-offers .filters .price .price-div p,
@@ -949,6 +950,44 @@ transform: translateY(5px);
     line-height: 23px;
     letter-spacing: 0.2px;
     color: var(--black);
+    margin-bottom: 10px;
+}
+
+.yacht-list-offers .filters .bnumber h3{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin-bottom: 20px;
+}
+
+.yacht-list-offers .filters .bnumber .bbuttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.yacht-list-offers .filters .bnumber .bbuttons input{
+    width: 40%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #cacdd18f;
+    padding-left: 17%;
+}
+
+.yacht-list-offers .filters .bnumber .bbuttons .bbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #cacdd18f;
+    border: none;
+    cursor: pointer;
+
 }
 
 .wrapper{
