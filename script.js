@@ -64,14 +64,30 @@ function change() {
 }
 
 const bedroomButtons = document.querySelectorAll('.bbuttons .bbutton');
+const filterCard = document.querySelectorAll('.card');
 let i = 0;
 
-bedroomButtons[0].addEventListener('click', function(){
-    i--;
-    document.querySelector('.binput').value = i;
+bedroomButtons.forEach(button =>{
+    button.addEventListener('click', event =>{
+        if(event.target.tagName !== 'BUTTON'){
+            return false;
+        }else{
+            if(event.target.dataset['b'] === 'button1'){
+                i--;
+                document.querySelector('.binput').value = i;
+            }else{
+                i++;
+                document.querySelector('.binput').value = i;
+            }
+        }
+
+        filterCard.forEach(elem =>{
+            elem.classList.remove('hide');
+            if(!elem.classList.contains(i) && i){
+                elem.classList.add('hide');
+            }
+        });
+
+    });
 });
 
-bedroomButtons[1].addEventListener('click', function(){
-    i++;
-    document.querySelector('.binput').value = i;
-});
