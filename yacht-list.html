@@ -30,8 +30,401 @@
         </ul>
     </section>
 
+    <section class="yacht-list-offers offers container">
+        <div class="filters">
+            <ul>
+                <h3>Year</h3>
+                <li>
+                    <label><input type="checkbox" rel="2016" class="filterInput" onchange="change()"><span data-f="2016">2016</span></label>
+                </li>
+                <li>
+                    <label><input type="checkbox" rel="2017" class="filterInput" onchange="change()"><span data-f="2017">2017</span></label>
+                </li>
+                <li>
+                    <label><input type="checkbox" rel="2018" class="filterInput" onchange="change()"><span data-f="2018">2018</span></label>
+                </li>
+                <li>
+                    <label><input type="checkbox" rel="2019" class="filterInput" onchange="change()"><span data-f="2019">2019</span></label>
+                </li>
+                <hr>
+            </ul>
+            <div class="price">
+                <div class="price-div">
+                    <h4 class="price-h4">Price</h4>
+                    <p class="price-p"><span class="price-span">0</span>-<span class="price-span">3000</span>$</p>
+                </div>
+                <div class="wrapper">
+                    <div class="slider">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="range-input">
+                        <input type="range" class="range-min" min="0" max="3000" value="500" step="100">
+                        <input type="range" class="range-max" min="0" max="3000" value="2500" step="100">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="length">
+                <div class="length-div">
+                    <h4 class="length-h4">Boat length</h4>
+                    <p class="length-p"><span class="length-span">100</span>-<span class="length-span">3000</span>m</p>
+                </div>
+                <div class="wrapper">
+                    <div class="slider-length">
+                        <div class="progress-length"></div>
+                    </div>
+                    <div class="length-input">
+                        <input type="range" class="range-min" min="100" max="3000" value="600" step="100">
+                        <input type="range" class="range-max" min="100" max="3000" value="2500" step="100">
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="yacht-list-div">
+            <ul class="yacht-list">
+                <li class="card 2016 all">
+                    <img src="./img/jpg/Yacht1.jpg" alt="">
+                    <h3>AZIMUT — 2016</h3>
+                    <ul class="info">
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-location"></use></svg>
+                            <p>Location</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="14"><use href="./img/svg/icons.svg#icon-captain"></use></svg>
+                            <p>With Captain</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-bed"></use></svg>
+                            <p>4 Bedroom</p>
+                        </li>
+                    </ul>
+                    <ul class="stars">
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-grey-star"></use></svg></li>
+                    </ul>
+                    <p>From 100$ per day</p>
+                </li>
+                <li class="card 2016 all">
+                    <img src="./img/jpg/Yacht2.jpg" alt="">
+                    <h3>AZIMUT — 2016</h3>
+                    <ul class="info">
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-location"></use></svg>
+                            <p>Location</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="14"><use href="./img/svg/icons.svg#icon-captain"></use></svg>
+                            <p>With Captain</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-bed"></use></svg>
+                            <p>4 Bedroom</p>
+                        </li>
+                    </ul>
+                    <ul class="stars">
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-grey-star"></use></svg></li>
+                    </ul>
+                    <p>From 100$ per day</p>
+                </li>
+                <li class="card 2016 all">
+                    <img src="./img/jpg/Yacht3.jpg" alt="">
+                    <h3>AZIMUT — 2016</h3>
+                    <ul class="info">
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-location"></use></svg>
+                            <p>Location</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="14"><use href="./img/svg/icons.svg#icon-captain"></use></svg>
+                            <p>With Captain</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-bed"></use></svg>
+                            <p>4 Bedroom</p>
+                        </li>
+                    </ul>
+                    <ul class="stars">
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-grey-star"></use></svg></li>
+                    </ul>
+                    <p>From 100$ per day</p>
+                </li>
+                <li class="card 2017 all">
+                    <img src="./img/jpg/Yacht4.jpg" alt="">
+                    <h3>AZIMUT — 2017</h3>
+                    <ul class="info">
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-location"></use></svg>
+                            <p>Location</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="14"><use href="./img/svg/icons.svg#icon-captain"></use></svg>
+                            <p>With Captain</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-bed"></use></svg>
+                            <p>4 Bedroom</p>
+                        </li>
+                    </ul>
+                    <ul class="stars">
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-grey-star"></use></svg></li>
+                    </ul>
+                    <p>From 100$ per day</p>
+                </li>
+                <li class="card 2017 all">
+                    <img src="./img/jpg/Yacht(2)5.jpg" alt="">
+                    <h3>AZIMUT — 2017</h3>
+                    <ul class="info">
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-location"></use></svg>
+                            <p>Location</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="14"><use href="./img/svg/icons.svg#icon-captain"></use></svg>
+                            <p>With Captain</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-bed"></use></svg>
+                            <p>4 Bedroom</p>
+                        </li>
+                    </ul>
+                    <ul class="stars">
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-grey-star"></use></svg></li>
+                    </ul>
+                    <p>From 100$ per day</p>
+                </li>
+                <li class="card 2017 all">
+                    <img src="./img/jpg/Yacht6.jpg" alt="">
+                    <h3>AZIMUT — 2017</h3>
+                    <ul class="info">
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-location"></use></svg>
+                            <p>Location</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="14"><use href="./img/svg/icons.svg#icon-captain"></use></svg>
+                            <p>With Captain</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-bed"></use></svg>
+                            <p>4 Bedroom</p>
+                        </li>
+                    </ul>
+                    <ul class="stars">
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-grey-star"></use></svg></li>
+                    </ul>
+                    <p>From 100$ per day</p>
+                </li>
+                <li class="card 2018 all">
+                    <img src="./img/jpg/Yacht(2)7.jpg" alt="">
+                    <h3>AZIMUT — 2018</h3>
+                    <ul class="info">
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-location"></use></svg>
+                            <p>Location</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="14"><use href="./img/svg/icons.svg#icon-captain"></use></svg>
+                            <p>With Captain</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-bed"></use></svg>
+                            <p>4 Bedroom</p>
+                        </li>
+                    </ul>
+                    <ul class="stars">
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-grey-star"></use></svg></li>
+                    </ul>
+                    <p>From 100$ per day</p>
+                </li>
+                <li class="card 2018 all">
+                    <img src="./img/jpg/Yacht(2)8.jpg" alt="">
+                    <h3>AZIMUT — 2018</h3>
+                    <ul class="info">
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-location"></use></svg>
+                            <p>Location</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="14"><use href="./img/svg/icons.svg#icon-captain"></use></svg>
+                            <p>With Captain</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-bed"></use></svg>
+                            <p>4 Bedroom</p>
+                        </li>
+                    </ul>
+                    <ul class="stars">
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-grey-star"></use></svg></li>
+                    </ul>
+                    <p>From 100$ per day</p>
+                </li>
+                <li class="card 2018 all">
+                    <img src="./img/jpg/Yacht(2)9.jpg" alt="">
+                    <h3>AZIMUT — 2018</h3>
+                    <ul class="info">
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-location"></use></svg>
+                            <p>Location</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="14"><use href="./img/svg/icons.svg#icon-captain"></use></svg>
+                            <p>With Captain</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-bed"></use></svg>
+                            <p>4 Bedroom</p>
+                        </li>
+                    </ul>
+                    <ul class="stars">
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-grey-star"></use></svg></li>
+                    </ul>
+                    <p>From 100$ per day</p>
+                </li>
+                <li class="card 2019 all">
+                    <img src="./img/jpg/Yacht(2)7.jpg" alt="">
+                    <h3>AZIMUT — 2019</h3>
+                    <ul class="info">
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-location"></use></svg>
+                            <p>Location</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="14"><use href="./img/svg/icons.svg#icon-captain"></use></svg>
+                            <p>With Captain</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-bed"></use></svg>
+                            <p>4 Bedroom</p>
+                        </li>
+                    </ul>
+                    <ul class="stars">
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-grey-star"></use></svg></li>
+                    </ul>
+                    <p>From 100$ per day</p>
+                </li>
+                <li class="card 2019 all">
+                    <img src="./img/jpg/Yacht(2)8.jpg" alt="">
+                    <h3>AZIMUT — 2019</h3>
+                    <ul class="info">
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-location"></use></svg>
+                            <p>Location</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="14"><use href="./img/svg/icons.svg#icon-captain"></use></svg>
+                            <p>With Captain</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-bed"></use></svg>
+                            <p>4 Bedroom</p>
+                        </li>
+                    </ul>
+                    <ul class="stars">
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-grey-star"></use></svg></li>
+                    </ul>
+                    <p>From 100$ per day</p>
+                </li>
+                <li class="card 2019 all">
+                    <img src="./img/jpg/Yacht(2)9.jpg" alt="">
+                    <h3>AZIMUT — 2019</h3>
+                    <ul class="info">
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-location"></use></svg>
+                            <p>Location</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="14"><use href="./img/svg/icons.svg#icon-captain"></use></svg>
+                            <p>With Captain</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg width="19" height="19"><use href="./img/svg/icons.svg#icon-bed"></use></svg>
+                            <p>4 Bedroom</p>
+                        </li>
+                    </ul>
+                    <ul class="stars">
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-star"></use></svg></li>
+                        <li><svg width="16" height="16"><use href="./img/svg/icons.svg#icon-grey-star"></use></svg></li>
+                    </ul>
+                    <p>From 100$ per day</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
     <footer class="footer footer-yacht-list">
-        <div class="top"></div>
         <div class="bottom">
             <div class="foottop">
                 <ul>
@@ -59,7 +452,7 @@
                 <div class="subscribe">
                     <h3>Subscribe</h3>
                     <div>
-                        <input type="text">
+                        <input type="text" placeholder="Your email">
                         <button type="submit"><span>></span></button>
                     </div>
                     <p>Nascetur aenean sapien, integer sit. Diam eleifend nunc vel, scelerisque aliquam, sed blandit. Ullamcorper varius ante bibendum pulvinar et quisque neque. Ut tempus neque, bibendum egestas nisl enim at condimentum vitae. Natoque.</p>
@@ -96,5 +489,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>

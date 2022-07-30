@@ -233,6 +233,10 @@ ul{
     color: #666666;
 }
 
+#hero form ul a{
+    text-decoration: none;
+}
+
 #hero form ul button{
     display: flex;
     justify-content: center;
@@ -255,20 +259,19 @@ ul{
 
 /* OFFERS */
 
-#offers{
+.offers{
     width: 100%;
     margin-bottom: 87px;
 }
 
-#offers .yacht-list{
+.offers .yacht-list{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-    margin-bottom: 54px;
+    flex-wrap: wrap;
 }
 
-#offers h2{
+.offers h2{
     font-family: 'Poppins';
     font-weight: 700;
     font-size: 35px;
@@ -277,25 +280,28 @@ ul{
     text-align: center;
 }
 
-#offers .card{
-    box-shadow: 0px 4px 12px 0px #0000001F; 
+.offers .card{
+    box-shadow: 0px 4px 12px 0px #00000042; 
     border-radius: 5px;
     padding-bottom: 15px;
     position: relative;
     width: 337px;
     margin-right: 0;
     cursor: pointer;
+    margin-bottom: 57px;
 }
 
-#offers .card:hover{
-    box-shadow: 0px 14px 20px 0px #0000001F;
+
+.offers .card:hover{
+    box-shadow: 0px 14px 20px 0px #0000007d;
 }
 
-#offers img:nth-child(1){
+.offers img:nth-child(1){
     margin-bottom: 6px;
+    width: 100%;
 }
 
-#offers h3{
+.offers h3{
     font-family: 'Inter';
     font-weight: 700;
     font-size: 18px;
@@ -305,7 +311,7 @@ ul{
     margin-left: 10px;
 }
 
-#offers .info{
+.offers .info{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -313,13 +319,13 @@ ul{
     margin-left: 10px;
 }
 
-#offers .info li{
+.offers .info li{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#offers .info li p{
+.offers .info li p{
     font-family: 'Inter';
     font-weight: 400;
     font-size: 10.819px;
@@ -329,11 +335,11 @@ ul{
     margin-left: 0;
 }
 
-#offers .info li p:not(:last-child){
+.offers .info li p:not(:last-child){
     margin-right: 7px;
 }
 
-#offers .info li hr{
+.offers .info li hr{
     width: 1px;
     height: 17px;
     color: var(--black);
@@ -341,11 +347,11 @@ ul{
     border: 0.77px solid var(--black);
 }
 
-#offers .info li svg{
+.offers .info li svg{
     margin-right: 5px;
 }
 
-#offers .info li:not(:last-child){
+.offers .info li:not(:last-child){
     margin-right: 15px;
 }
 
@@ -361,7 +367,7 @@ ul{
     margin-right: 5px;
 }
 
-#offers .card p{
+.offers .card p{
     font-family: 'Inter';
     font-weight: 700;
     font-size: 15px;
@@ -370,13 +376,13 @@ ul{
     margin-left: 10px;
 }
 
-#offers img:nth-child(2){
+.offers img:nth-child(2){
     position: absolute;
     top: 0;
     right: 15px;
 }
 
-#offers a{
+.offers a{
     font-family: 'Poppins';
     font-weight: 500;
     font-size: 18px;
@@ -386,7 +392,7 @@ ul{
     margin-left: auto;
 }
 
-#offers div{
+.offers .offers-link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -831,8 +837,173 @@ transform: translateY(5px);
 
 */
 
+/* Yacht list */
+
+.yacht-list-offers{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.yacht-list-offers .yacht-list{
+    justify-content: center;
+}
+
+.yacht-list-offers .yacht-list-div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.yacht-list-offers .yacht-list-div .yacht-list .card{
+    margin-right: 50px;
+}
+
+.yacht-list-offers .filters{
+    width: 20%;
+    height: 100vh;
+    margin-right: 16px;
+    padding-left: 25px;
+}
+
+.yacht-list-offers .filters ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.yacht-list-offers .filters hr{
+    width: 100%;
+    border: 2px solid #F2F2F2;
+    margin-bottom: 30px;
+}
+
+.yacht-list-offers .filters ul h3{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.2px;
+    color: var(--black);
+    margin-bottom: 13px;
+}
+
+.yacht-list-offers .filters ul li{
+    display: flex;
+}
+
+.yacht-list-offers .filters ul li:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.yacht-list-offers .filters ul li:last-child{
+    margin-bottom: 40px;
+}
+
+.yacht-list-offers .filters ul li span{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--black);
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.yacht-list-offers .filters .price,
+.yacht-list-offers .filters .length{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.yacht-list-offers .filters .price .price-div,
+.yacht-list-offers .filters .length .length-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.yacht-list-offers .filters .price .price-div .price-h4,
+.yacht-list-offers .filters .length .length-div .length-h4{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--black);
+}
+
+.yacht-list-offers .filters .price .price-div p,
+.yacht-list-offers .filters .length .length-div p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.2px;
+    color: var(--black);
+}
+
+.wrapper{
+    width: 100%;
+    height: 50px;
+}
+
+.slider,
+.slider-length{
+    height: 5px;
+    border-radius: 5px;
+    background: #ddd;
+    position: relative;
+}
+
+.slider .progress,
+.slider-length .progress-length{
+    height: 5px;
+    left: 20%;
+    right: 20%;
+    position: absolute;
+    border-radius: 5px;
+    background: var(--blue);
+}
+
+.range-input,
+.length-input{
+    position: relative;
+}
+
+.range-input input,
+.length-input input{
+    position: absolute;
+    top: -5px;
+    height: 5px;
+    width: 100%;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    pointer-events: auto;
+    background: var(--blue);
+    -webkit-appearance: none;
+}
+
+/* FOOTER */
+
 .footer-yacht-list{
     background-image: none;
+    height: 501px;
 }
 
 .footer-yacht-list .bottom .foottop ul li p{
