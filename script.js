@@ -3,7 +3,9 @@ priceSpan = document.querySelectorAll(".price-p .price-span"),
 progress = document.querySelector(".slider .progress"),
 lengthInput = document.querySelectorAll(".length-input input"),
 lengthSpan = document.querySelectorAll(".length-p .length-span"),
-lengthprogress = document.querySelector(".slider-length .progress-length");
+lengthprogress = document.querySelector(".slider-length .progress-length"),
+bedroomButtons = document.querySelectorAll('.bbuttons .bbutton'),
+filterCard = document.querySelectorAll('.card');
 
 let priceGap = 500;
 
@@ -24,6 +26,17 @@ rangeInput.forEach(input =>{
             progress.style.left = (minVal / rangeInput[0].max) * 100 + "%";
             progress.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
         }
+
+        filterCard.forEach(elem =>{
+            let dattaPrice = elem.dataset['price'];
+            let dataPrice = parseInt(dattaPrice);
+            elem.classList.remove('hide');
+            if(dataPrice >= minVal && dataPrice <= maxVal){
+                elem.classList.remove('hide');
+            }else{
+                elem.classList.add('hide');
+            }
+        });
     });
 });
 
@@ -44,13 +57,23 @@ lengthInput.forEach(input =>{
             lengthprogress.style.left = (minVal / lengthInput[0].max) * 100 + "%";
             lengthprogress.style.right = 100 - (maxVal / lengthInput[1].max) * 100 + "%";
         }
+        filterCard.forEach(elem =>{
+            let dattaLength = elem.dataset['length'];
+            let dataLength = parseInt(dattaLength);
+            elem.classList.remove('hide');
+            if(dataLength >= minVal && dataLength <= maxVal){
+                elem.classList.remove('hide');
+            }else{
+                elem.classList.add('hide');
+            }
+        });
     });
 });
 
 function change() {
     let results = Array.from(document.querySelectorAll('.yacht-list > li'));
     results.forEach(function(result) {
-      result.style.display = 'none';
+      result.classList.add("hide");
     });
     Array.from(document.querySelectorAll('.filters input[rel]:checked'), function(input) {
       const attrib = input.getAttribute('rel');
@@ -59,12 +82,11 @@ function change() {
       });
     });
     results.forEach(function(result) {
-      result.style.display = 'block';
+      result.classList.remove("hide");
     });
 }
 
-const bedroomButtons = document.querySelectorAll('.bbuttons .bbutton');
-const filterCard = document.querySelectorAll('.card');
+
 let i = 0;
 
 bedroomButtons.forEach(button =>{
