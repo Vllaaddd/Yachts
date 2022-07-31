@@ -1,0 +1,26 @@
+.yacht-list-offers{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.yacht-list-offers .yacht-list{
+    justify-content: center;
+}
+
+.yacht-list-offers .yacht-list-div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.yacht-list-offers .yacht-list-div .yacht-list .card{
+    margin-right: 50px;
+    width: 337px;
+}
+
+.hide{
+    display: none;
+}

@@ -1,0 +1,210 @@
+.footer{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/jpg/footer-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer .top{
+    width: 100%;
+    height: 35vh;
+    background: linear-gradient(180deg, #FFFFFF 36.78%, rgba(238, 244, 255, 0) 66.9%);
+}
+
+.footer .bottom{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foottop{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer .bottom .foottop ul:nth-child(1){
+    margin-left: 130px;
+}
+
+.footer .bottom .foottop ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer .bottom .foottop ul li h3{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.footer .bottom .foottop ul li p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 13px;
+}
+
+.footer .bottom .foottop ul li a{
+    color: var(--white);
+    opacity: 0.5;
+    
+}
+
+.footer .bottom .foottop .subscribe{
+    width: 430px;
+    padding-right: 42px;
+    padding-left: 42px;
+    margin-right: 130px;
+}
+
+.footer .bottom .foottop .subscribe h3{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--white);
+    margin-bottom: 18px;
+}
+
+.footer .bottom .foottop .subscribe p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--white);
+    margin-bottom: 30px;
+}
+
+.footer .bottom .foottop .subscribe div{
+    padding: 0;
+}
+
+.footer .bottom .foottop .subscribe div input{
+    width: 288px;
+    height: 50px;
+    border: none;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    outline: none;
+    padding-left: 20px;
+}
+
+.footer .bottom .foottop .subscribe div button{
+    width: 50px;
+    height: 50px;
+    background: var(--blue);
+    border: none;
+    border-radius: 6px;
+    transform: translateX(-4px);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    cursor: pointer;
+}
+
+.footer .bottom .foottop .subscribe div button span{
+    color: var(--white);
+}
+
+.footer .footbot{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer hr{
+    width: calc(100% - 120px);
+    color: var(--white);
+    height: 0;
+    border: 0.1px solid var(--white);
+}
+
+.footer .footbot div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 130px;
+}
+
+.footer .footbot div svg{
+    fill: var(--white);
+}
+
+.footer .footbot div a h2{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 17px;
+    letter-spacing: 0.2px;
+    margin-left: 8px;
+}
+
+.footer .footbot div a{
+    color: var(--white);
+    
+}
+
+.footer .footbot ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.footer .footbot ul li a p{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.footer ul li a{
+    color: var(--white);
+    
+}
+
+.footer .footbot ul li:not(:last-child){
+    margin-right: 36px;
+}
+
+.footer .footbot ol{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 130px;
+}
+
+.footer .footbot ol li:not(:last-child){
+    margin-right: 15px;
+}
+
+.footer .footbot ol li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border: 1.5px solid var(--white);
+    border-radius: 50%;
+}
+
+.footer .footbot ol li a svg{
+    fill: var(--white);
+}

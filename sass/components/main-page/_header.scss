@@ -1,0 +1,96 @@
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px -1px 1px 0px #0000001A inset;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 167.5px;
+}
+
+#header h3{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 17px;
+    letter-spacing: 0.2px;
+}
+
+#header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header ul:nth-child(1) a{
+    
+    color: var(--light-black);
+}
+
+#header ul:nth-child(1) svg{
+    fill: var(--blue);
+    margin-right: 5px;
+}
+
+#header ul:nth-child(3) li a{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.2px;
+    
+    color: var(--light-black);
+}
+
+#header ul:nth-child(3) li a:hover{
+    color: var(--blue);
+}
+
+#header ul:nth-child(3) li:not(:last-child){
+    margin-right: 25px;
+}
+
+#header ul:nth-child(3) svg{
+    transform: translate(-5px, 3px);
+}
+
+#header ul:nth-child(3) li:hover svg{
+    fill: var(--blue);
+    transform: translate(-5px, 3px);
+}
+
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar a{
+    
+    color: #BDBDBD;
+}
+
+#navbar a:hover{
+    color: var(--blue);
+}
+
+#navbar li a.active{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.2px;
+    color: var(--light-black);
+}
+
+#navbar li{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.2px;
+}
+
+#navbar li:not(:last-child){
+    margin-right: 30px;
+}

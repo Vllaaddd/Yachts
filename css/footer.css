@@ -1,0 +1,50 @@
+.footer-yacht-list {
+  background-image: none;
+  height: 501px;
+}
+
+.footer-yacht-list .bottom .foottop ul li p {
+  color: var(--light-black);
+  opacity: 0.5;
+}
+
+.footer-yacht-list .bottom .foottop ul li h3 {
+  color: var(--light-black);
+}
+
+.footer-yacht-list .bottom .foottop .subscribe h3 {
+  color: var(--light-black);
+}
+
+.footer-yacht-list .bottom .foottop .subscribe div input {
+  border: 1px solid #E0E0E0;
+}
+
+.footer .bottom .foottop .subscribe div button span {
+  color: var(--light-black);
+}
+
+.footer-yacht-list hr {
+  color: var(--light-black);
+  border: 0.1px solid var(--light-black);
+}
+
+.footer-yacht-list .footbot div svg {
+  fill: var(--light-black);
+}
+
+.footer-yacht-list .footbot div a {
+  color: var(--light-black);
+}
+
+.footer-yacht-list ul li a {
+  color: var(--light-black);
+}
+
+.footer-yacht-list .footbot ol li a {
+  border: 1.5px solid var(--light-black);
+}
+
+.footer-yacht-list .footbot ol li a svg {
+  fill: var(--light-black);
+}/*# sourceMappingURL=footer.css.map */

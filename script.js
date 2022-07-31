@@ -90,4 +90,3 @@ bedroomButtons.forEach(button =>{
 
     });
 });
-

@@ -1,0 +1,57 @@
+#blog {
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+#blog h2 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 54px;
+  color: var(--black);
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+#blog h2 span {
+  color: var(--blue);
+}
+
+#blog ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#blog ul li {
+  width: 270px;
+}
+
+#blog ul li:not(:last-child) {
+  margin-right: 30px;
+}
+
+#blog ul li img {
+  width: 270px;
+  height: 270px;
+  border-radius: 5px;
+  margin-bottom: 24px;
+}
+
+#blog ul li h3 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 16px;
+  color: #222222;
+}
+
+#blog ul li p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #999999;
+}/*# sourceMappingURL=blog.css.map */

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "./variables/variables";
+@import "./utils/utils";
+@import "./components/common.scss";
+@import "./components/main-page/header.scss";
+@import "./components/main-page/hero-section.scss";
+@import "./components/main-page/offers.scss";
+@import "./components/main-page/aviable.scss";
+@import "./components/main-page/blog.scss";
+@import "./components/main-page/asks";
+@import "./components/main-page/footer";
+@import "./components/yacht-list/yacht-list";
+@import "./components/yacht-list/filters.scss";
+@import "./components/yacht-list/footer.scss";

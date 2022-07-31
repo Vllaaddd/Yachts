@@ -1,0 +1,52 @@
+#ask {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#ask h2 {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.2px;
+  margin-bottom: 16px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#ask p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  margin-bottom: 70px;
+  text-align: center;
+  color: #757575;
+}
+
+#ask ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+#ask ul li p {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+  color: var(--black);
+  margin: 0;
+}
+
+#ask ul li img {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}/*# sourceMappingURL=asks.css.map */
